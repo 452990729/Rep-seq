@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# description: convert html to pdf
+
+if [ $# -ne 3 ]
+	then
+	echo "usage: $0 cover htmlpage pdf" >&2
+	exit 1
+fi
+
+filepath=$(cd "$(dirname "$0")"; pwd)
+html2pdf_path="$filepath/wkhtmltox-0.12.1/"
+fontpath="$filepath/fonts"
+pdftk_path="$filepath/pdftk"
+
+path=`dirname $0`
+
+# install font
+if [ ! -f ~/.fonts/wqy-microhei.ttc ]; then
+	wqy=$fontpath/`ls -1 $fontpath | grep wqy-microhei | tail -n 1`
+	echo installing wqy font...
+	if [ ! -d ~/.fonts ]; then
+		mkdir ~/.fonts
+	fi
+	tar zxf $wqy
+	cp wqy-microhei/*.ttc  ~/.fonts
+	rm -rf wqy-microhei
+fi
+
+# convert html to pdf
+my_cover=$1
+my_html=$2
+my_pdf_ori1="$3_ori1.pdf"
+my_pdf_ori2="$3_ori2.pdf"
+my_pdf=$3
+$html2pdf_path/wkhtmltopdf --page-size A4 --quiet --disable-external-links --print-media-type -O Portrait -T 20mm -R 10mm -B 30mm -L 10mm cover $my_cover toc --toc-text-size-shrink 1 --footer-center '[page]/[toPage]' --header-spacing 5 $my_html --page-offset -1 --footer-center '[page]/[toPage]' $my_pdf_ori1
+$pdftk_path $my_pdf_ori1 output $my_pdf_ori2
+$pdftk_path $my_pdf_ori2 background $path/background.pdf output $my_pdf
+rm -f $my_pdf_ori1 $my_pdf_ori2
+

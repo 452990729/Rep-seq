@@ -1,0 +1,2911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<TITLE> 广州华银医学检验中心免疫组库结题报告 </TITLE>
+<META NAME="Author" CONTENT="xxxxxx">
+<META NAME="Version" CONTENT="xxxxxx">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" media="screen" href="src/css/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="src/css/smoothness/jquery.ui.all.css" />
+<script src="src/js/jqueryava-en.js" type="text/javascript"></script>
+<script src="src/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="src/js/i18n/grid.locale-en.js" type="text/javascript"></script>
+<script type="text/javascript" src="src/js/jquery.jqGrid.min.js"></script>  
+<link rel="stylesheet" type="text/css" href="src/css/text.css">
+<link rel="StyleSheet" href="src/js/tree/tree.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="src/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" href="src/css/style.css" />
+<script src="src/js/scrollTop.js" type="text/javascript"></script>
+<script src="src/js/common.js" type="text/javascript"></script>
+<script src="src/js/jquery.albumSlider.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="src/js/tree/tree.js"></script>
+<script type="text/javascript" src="src/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="src/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        *   Examples - images
+        */
+
+        $("a#example2").fancybox({
+            'overlayShow'   : false,
+            'transitionIn'  : 'elastic',
+            'transitionOut' : 'elastic'
+        });
+
+        $("a[rel=example_group]").fancybox({
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none',
+            'titlePosition'     : 'over',
+            'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+                return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+            }
+        });
+
+        /*
+        *   Examples - various
+        */
+
+        $("#various1").fancybox({
+            'titlePosition'     : 'inside',
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none'
+        });
+
+        $("#various2").fancybox();
+
+        $("#various3").fancybox({
+            'width'             : '75%',
+            'height'            : '75%',
+            'autoScale'         : false,
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none',
+            'type'              : 'iframe'
+        });
+
+        $("#various4").fancybox({
+            'padding'           : 0,
+            'autoScale'         : false,
+            'transitionIn'      : 'none',
+            'transitionOut'     : 'none'
+        });
+    });
+</script>
+
+<style media="print">
+.noprint {DISPLAY: none;}
+</style>
+<style type="text/css">
+    body {
+    background:#fff url(src/images/bg.gif) repeat-x; color:#091f30
+}
+</style>
+<div class="noprint">
+<div style="display: block;" id="goTopBtn">
+<a class="backtotop" title="回顶部"><img src="src/images/goTop.jpg" width="30" height="30" class="back-tip"/></a>
+</div>
+</div>
+
+<script type="text/javascript"> 
+function displaySubMenu(li) { 
+var subMenu = li.getElementsByTagName("ul")[0]; 
+subMenu.style.display = "block"; 
+} 
+function hideSubMenu(li) { 
+var subMenu = li.getElementsByTagName("ul")[0]; 
+subMenu.style.display = "none"; 
+} 
+</script> 
+
+<script type="text/javascript">
+$(function(){
+    //纵向，默认，移动间隔2
+    $('div.albumSlider').albumSlider();
+    //横向设置
+    $('div.albumSlider-h').albumSlider({direction:'h',step:3});
+});
+</script>   
+
+</head>
+<body>
+<!---------------------------------------- MenuBar ------------------------------------------------>
+<div id ="menu_bar">
+	<div class="logo_title">
+		<div class="acnormal"><img class="normal" align="left" src="src/images/logo.png" /></div>
+		<div class="title"><h1>广州华银医学检验中心免疫组库结题报告</h1></div>
+	</div>
+	<div class="bar">
+		<ul class="main_menu">
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="#总体工作流程概述">总体工作流程概述</a>
+                <ul id="menu_list">
+                    <li><a href="#实验流程">实验流程</a></li>
+                    <li><a href="#生物信息分析流程">生物信息分析流程</a></li>
+                </ul>
+            </li>
+            <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="#分析结果">分析结果</a>
+                <ul id="menu_list">
+                    <li><a href="#数据概况">数据概况</a></li>
+                    <li><a href="#克隆的鉴定与计数">克隆的鉴定与计数</a></li>
+                    <li><a href="#不同V/D/J基因使用频率">不同V/D/J基因使用频率</a></li>
+                    <li><a href="#不同V/D/J基因组合频率">不同V/D/J基因组合频率</a></li>
+                    <li><a href="#CDR3的长度分布">CDR3的长度分布</a></li>
+                    <li><a href="#丰富度和多样性评估">丰富度和多样性评估</a></li>
+                    
+                    <li><a href="#样本间相关性分析">样本间相关性分析</a></li>
+                    
+                </ul>
+            </li>
+            <li> <a href="#参考文献">参考文献</a></li>
+            <li> <a href="#备注">备注</a></li>
+        </ul>
+    </div>
+</div>
+<!--menu over-->
+
+<div id="main">
+<!---------------------------------------- 目录 ------------------------------------------------>
+<div id="page">
+    <p class="paragraph">
+        <dl>
+            <dt><a href="#总体工作流程概述">1 总体工作流程概述</a>
+                <dl class="alt">
+                    <dd><a href="#实验流程">1.1 实验流程</a></dd>
+                    <dd><a href="#生物信息分析流程">1.2 生物信息分析流程</a></dd>
+                </dl>
+            </dt>
+            <dt><a href="#分析结果">2 分析结果</a></dt>
+                <dl class="alt">
+                    <dd><a href="#数据概况">2.1 数据概况</a></dd>
+                    <dd><a href="#克隆的鉴定与计数">2.2 克隆的鉴定与计数</a></dd>
+                    <dd><a href="#不同V/D/J基因使用频率">2.3 不同V/D/J基因使用频率</a></dd>  
+                    <dd><a href="#不同V/D/J基因组合频率">2.4 不同V/D/J基因组合频率</a></dd>  
+                    <dd><a href="#CDR3的长度分布">2.5 CDR3的长度分布</a></dd> 
+                    <dd><a href="#丰富度和多样性评估">2.6 丰富度和多样性评估</a></dd>
+                    
+                    <dd><a href="#样本间相关性分析">2.7 样本间相关性分析</a></dd>
+                    <dd><a href="#样本间CDR3序列的相似性">&nbsp;&nbsp;&nbsp;&nbsp;2.7.1 样本间CDR3序列的相似性</a></dd>
+                    <dd><a href="#样本间VDJ基因以及相互组合的共线性">&nbsp;&nbsp;&nbsp;&nbsp;2.7.2 样本间VDJ基因以及相互组合的共线性</a></dd>
+                    
+                    <dd><a href="#样本间差异假设检验分析">&nbsp;&nbsp;&nbsp;&nbsp;2.7.3 样本间差异假设检验分析</a></dd>
+                    <dd><a href="#样本间PCA分析">&nbsp;&nbsp;&nbsp;&nbsp;2.7.4 样本间PCA分析</a></dd>
+                    
+                    
+                </dl>
+            <dt><a href="#参考文献">3 参考文献</a></dt>
+            <dt><a href="#备注">4 备注</a></dt>
+            </ul><br /><br />
+    </p>
+</div>
+<!----------------------------------------EndBar------------------------------------------------>
+
+
+<!----------------------------------------总体工作流程概述---------------------------------------->
+<div id="page">
+    <p class="head"><a href="#home" title = "返回首页"><img class="logo" align="left" src="src/images/logo.png" /></a>
+    <a name="项目流程">广州华银医学检验中心</a>
+    <hr/>
+    </p><br/>
+    <h2>1 总体工作流程概述</h2>
+    <p class="paragraph">免疫组库（Immune Repertoire，IR）是指某个个体在任何特定时间点其循环系统中所有功能多样性B淋巴细胞和T淋巴细胞的总和。T细胞和B细胞分别介导机体的细胞免疫和体液免疫应答，分别通过其表面的T细胞受体（TCR）和 B细胞受体（BCR）来识别和结合抗原，进而发挥功能清除病原体或体内肿瘤细胞。</p>
+    <p class="paragraph">免疫组库高通量测序是通过多重PCR或SMART RACE法扩增TCR/BCR全长或CDR3区序列（主要是TCR的β链或BCR的重链），再结合高通量测序技术，对机体免疫组库的多样性及每种 T、B细胞克隆的独特性序列组成和变化进行分析，从而全面评估机体的免疫状态，明确疾病与T、B细胞克隆组成及变化之间的关系。随着免疫组库高通量测序技术的不断发展和成熟，基于免疫组库多样性变化特点的生物标志物发现、肿瘤等疾病疗效预测、疾病的易感性和抵抗性、感染性疾病及疫苗研究等方面都取得了重要进展。</p>
+    <a name="实验流程"></a><h3>1.1 实验流程</h3>
+    <p class="paragraph">接收样品后，首先对样品进行质量检测；然后提取 RNA，用 添加UMI改良的5′RACE 法扩增免疫组库序列，回收目的片段，构建测序文库；并分别用 Qubit、Agilent 和 Q-PCR 法对文库的浓度、片段的完整性及插入片段大小、文库有效浓度进行检 测和精确定量；检测合格的文库用 Illumina 高通量测序平台（HiSeq/MiSeq）进行测序。</p>
+    <p class="center">
+    <img  src="src/images/pipeline.png" width="30%" height="30%"/>
+    </p>
+    <p class="name">图 1-1 实验流程图</p>
+
+    <a name="生物信息分析流程"></a><h3>1.2 生物信息分析流程</h3>
+    <p class="center">
+    <img  src="src/images/pipeline2.png" width="50%" height="40%"/>
+    </p>
+  <p class="name">图 1-2 生物信息分析流程图</p>
+    <p class="paragraph">信息分析分以下几个步骤：</p>
+	<p class="paragraph"><b>1 原始下机数据处理</b> 此步骤过滤测序质量值低的reads，保留高质量reads，过滤后的数据称为Clean Data；</br></p>
+	<p class="paragraph"><b>2 UMI自身校正和根据UMI构建一致性序列；</b> 
+	首先对UMI进行聚类，校正UMI的自身错误，在2对每个校正过的UMI cluster的序列进行比对，构建一条一致性序列，称为一个clone；</br></p>
+	<p class="paragraph"><b>3 Clonal Assignment</b> 对clone进行比对分析，相同的clone归类为一个clonetype，并统计每个clonetype含有的clone数目；</br></p>
+	<p class="paragraph"><b>4 注释</b> 
+	采用IMGT数据库对鉴定的clonetype进行注释，鉴定出VDJ组合和CDR3序列等；</br></p>
+	<p class="paragraph"><b>5 V(D)J分析</b> 
+	对不同V(D)J的使用频率和相互组合进行统计分析，并分析相关CDR3的长度；</br></p>
+	<p class="paragraph"><b>6 相似性和多样性评估</b> 对样本的Rankabundance变化趋势进行分析，并采用Hill指数的方式去评估样本的多样性；</br></p>
+	<p class="paragraph"><b>7 样本间的相关性分析</b> 
+	对于多样本分析的情况，采用多方法多角度进行比较分析。</br></p>
+	<p class="paragraph"><b>注：此分析流程图包括该产品的所有分析内容，本项目具体分析内容以此报告为准。</b></p>
+    </br></br>
+</div>
+
+<!-------------------------------------------- 分析结果 -------------------------------------------->
+    <div id="page">
+    <p class="head"><a href="#home" title = "返回首页"><img class="logo" align="left" src="src/images/logo.png" /></a>
+    <a name="分析结果">广州华银医学检验中心</a>
+    <hr/>
+    </p><br/>
+    <a name="分析结果"></a><h2>2 分析结果</h2>
+    
+    <!-------------------------------------------- 数据预处理 ---------------------------------------->
+    <a name="数据概况"></a><h3>2.1 数据概况</h3>
+    <p class="paragraph">使用内部撰写的程序对原始的测序数据进行质量控制，获得Clean Data，并通过UMI对数据进行校正，校正后的数据通过数据库比对进行clone鉴定，对鉴定的clone做以下处理：</br>
+    (A)氨基酸个数大于等于4;</br>
+    (B)核酸长度是3的倍数;</br>
+    (C)核酸序列中不包含中止密码子。</br>
+    详细的数据统计信息如下表所示：</p>
+    <p class="name">表 2-1 数据统计信息</p>
+    <div style="text-align:center;">
+        <table id="table_clean_Data">
+        	
+        	<TR>
+        		<TD class="c1">ID</TD>
+        		<TD class="c2">Sample</TD>
+        		<TD class="c3">ReadPair</TD>
+        		<TD class="c4">FilteredReads</TD>
+        		<TD class="c5">ReadUtilization (%)</TD>
+        		<TD class="c6">Clones</TD>
+                <TD class="c61">Clonetypes</TD>
+        		<TD class="c7">UniqueV</TD>
+        		<TD class="c8">UniqueJ</TD>
+        		<TD class="c9">UniqueVDJ</TD>
+        		<TD class="c10">UniqueCDR3aa</TD>
+        		<TD class="c11">UniqueCDR3nt</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">1</TD>
+        		<TD class="c2">WAS9CD8TCM</TD>
+        		<TD class="c3">3526218</TD>
+        		<TD class="c4">2997821</TD>
+        		<TD class="c5">85.02</TD>
+        		<TD class="c6">4467</TD>
+                <TD class="c61">3446</TD>
+        		<TD class="c7">22</TD>
+        		<TD class="c8">12</TD>
+        		<TD class="c9">385</TD>
+        		<TD class="c10">3446</TD>
+        		<TD class="c11">3444</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">2</TD>
+        		<TD class="c2">WAS6CD8TCM</TD>
+        		<TD class="c3">4424167</TD>
+        		<TD class="c4">3305488</TD>
+        		<TD class="c5">74.71</TD>
+        		<TD class="c6">2236</TD>
+                <TD class="c61">801</TD>
+        		<TD class="c7">23</TD>
+        		<TD class="c8">12</TD>
+        		<TD class="c9">265</TD>
+        		<TD class="c10">801</TD>
+        		<TD class="c11">799</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">3</TD>
+        		<TD class="c2">WAS4CD8TCM</TD>
+        		<TD class="c3">3805857</TD>
+        		<TD class="c4">3012573</TD>
+        		<TD class="c5">79.16</TD>
+        		<TD class="c6">3047</TD>
+                <TD class="c61">1623</TD>
+        		<TD class="c7">23</TD>
+        		<TD class="c8">12</TD>
+        		<TD class="c9">329</TD>
+        		<TD class="c10">1623</TD>
+        		<TD class="c11">1622</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">4</TD>
+        		<TD class="c2">WAS8CD8TCM</TD>
+        		<TD class="c3">3640802</TD>
+        		<TD class="c4">3211601</TD>
+        		<TD class="c5">88.21</TD>
+        		<TD class="c6">4357</TD>
+                <TD class="c61">3337</TD>
+        		<TD class="c7">23</TD>
+        		<TD class="c8">12</TD>
+        		<TD class="c9">377</TD>
+        		<TD class="c10">3337</TD>
+        		<TD class="c11">3332</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">5</TD>
+        		<TD class="c2">WAS4CD4TEM</TD>
+        		<TD class="c3">3091268</TD>
+        		<TD class="c4">2446609</TD>
+        		<TD class="c5">79.15</TD>
+        		<TD class="c6">2751</TD>
+                <TD class="c61">1245</TD>
+        		<TD class="c7">21</TD>
+        		<TD class="c8">13</TD>
+        		<TD class="c9">309</TD>
+        		<TD class="c10">1245</TD>
+        		<TD class="c11">1244</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">6</TD>
+        		<TD class="c2">WAS6CD4TEM</TD>
+        		<TD class="c3">3991945</TD>
+        		<TD class="c4">3474606</TD>
+        		<TD class="c5">87.04</TD>
+        		<TD class="c6">3756</TD>
+                <TD class="c61">1201</TD>
+        		<TD class="c7">22</TD>
+        		<TD class="c8">13</TD>
+        		<TD class="c9">307</TD>
+        		<TD class="c10">1201</TD>
+        		<TD class="c11">1192</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">7</TD>
+        		<TD class="c2">WAS8CD4TEM</TD>
+        		<TD class="c3">6429432</TD>
+        		<TD class="c4">5595099</TD>
+        		<TD class="c5">87.02</TD>
+        		<TD class="c6">1438</TD>
+                <TD class="c61">616</TD>
+        		<TD class="c7">23</TD>
+        		<TD class="c8">13</TD>
+        		<TD class="c9">242</TD>
+        		<TD class="c10">616</TD>
+        		<TD class="c11">610</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">8</TD>
+        		<TD class="c2">WAS9CD4TEM</TD>
+        		<TD class="c3">4594889</TD>
+        		<TD class="c4">3913616</TD>
+        		<TD class="c5">85.17</TD>
+        		<TD class="c6">3348</TD>
+                <TD class="c61">1492</TD>
+        		<TD class="c7">22</TD>
+        		<TD class="c8">13</TD>
+        		<TD class="c9">338</TD>
+        		<TD class="c10">1492</TD>
+        		<TD class="c11">1486</TD>
+        	</TR>
+        	
+        </table>
+        <div id="page_clean_Data"></div>
+    </div></br>
+    <p class="premark"><b>说明</b> Clones：有效克隆数; Clonetypes：clone的种类数; Unique V：不同 V 基因使用种类数; Unique J：不同 J 基因使用种类数; Unique VDJ：独特的 V/D/J 基因组合数; Unique CDR3aa：独特的 CDR3 氨基酸序列数; Unique CDR3nt：独特的 CDR3 核酸序列数。</p></br>
+    <p class="paragraph">随机挑选10000条原始reads做测序质量分布图如下图所示：</p>
+    <div class="albumSlider">
+       <div class="fullview"> <img src="src/pictures/ReadsQualityOfWAS4CD4TEM.png" alt="ReadsQualityOfWAS4CD4TEM.png" title="ReadsQualityOfWAS4CD4TEM.png" /></div>
+        <div class="slider">
+            <div class="button movebackward" title="向上滚动"></div>
+            <div class="imglistwrap">
+                <ul class="imglist">
+                	
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS4CD4TEM.png" ><img src="src/pictures/ReadsQualityOfWAS4CD4TEM.png" alt="ReadsQualityOfWAS4CD4TEM.png" title="ReadsQualityOfWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS4CD8TCM.png" ><img src="src/pictures/ReadsQualityOfWAS4CD8TCM.png" alt="ReadsQualityOfWAS4CD8TCM.png" title="ReadsQualityOfWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS6CD4TEM.png" ><img src="src/pictures/ReadsQualityOfWAS6CD4TEM.png" alt="ReadsQualityOfWAS6CD4TEM.png" title="ReadsQualityOfWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS6CD8TCM.png" ><img src="src/pictures/ReadsQualityOfWAS6CD8TCM.png" alt="ReadsQualityOfWAS6CD8TCM.png" title="ReadsQualityOfWAS6CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS8CD4TEM.png" ><img src="src/pictures/ReadsQualityOfWAS8CD4TEM.png" alt="ReadsQualityOfWAS8CD4TEM.png" title="ReadsQualityOfWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS8CD8TCM.png" ><img src="src/pictures/ReadsQualityOfWAS8CD8TCM.png" alt="ReadsQualityOfWAS8CD8TCM.png" title="ReadsQualityOfWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS9CD4TEM.png" ><img src="src/pictures/ReadsQualityOfWAS9CD4TEM.png" alt="ReadsQualityOfWAS9CD4TEM.png" title="ReadsQualityOfWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ReadsQualityOfWAS9CD8TCM.png" ><img src="src/pictures/ReadsQualityOfWAS9CD8TCM.png" alt="ReadsQualityOfWAS9CD8TCM.png" title="ReadsQualityOfWAS9CD8TCM.png" /></a></li>
+                    
+                </ul>
+            </div>
+            <div class="button moveforward" title="向下滚动"></div>
+        </div>
+    </div>
+    <p class="name">图 2-1 样品测序质量统计图</p>    <p class="premark"><b>说明</b> 横坐标为Reads类型，纵坐标为测序质量值。上图属于箱线图的一种变体，其与核密度图相结合。白点为中位数，黑色盒型的范围是下四分位点到上四分位点，细黑线表示须。外部形状即为核密度估计。一般情况下，中位数value值大于30，且密度分布集中在中位数值以上，即表明数据质量较高。</p></br>  
+
+    <!--------------------------------------------克隆的鉴定与计数---------------------------------------->
+    <a name="克隆的鉴定与计数"></a><h3>2.2 克隆的鉴定与计数</h3>
+    <p class="paragraph">将样本测序得到的序列与IMGT数据库中记录的VDJ基因参考序列进行比对。根据每条序列的比对结果，确定相应的VDJ基因的使用情况和具体的CDR3区域序列，并过滤掉不符合条件或者没有功能的受体序列，统计结果部分如表 2-2</p>
+    <p class="name">表 2-2 克隆的鉴定与计数</p>
+    <div style="text-align:center;">
+        <table id="table_clone">
+        	
+        	<TR>
+        		<TD class="c1">clonetype</TD>
+        		<TD class="c2">cloneCount</TD>
+        		<TD class="c3">cloneFraction</TD>
+        		<TD class="c4">bestVGene</TD>
+        		<TD class="c5">bestDGene</TD>
+        		<TD class="c6">bestJGene</TD>
+        		<TD class="c7">bestVFamily</TD>
+                <TD class="c8">bestDFamily</TD>
+        		<TD class="c9">bestJFamily</TD>
+        		<TD class="c10">VJCombination</TD>
+        		<TD class="c11">VDJCombination</TD>
+        		<TD class="c13">nSeqCDR3</TD>
+        		<TD class="c14">aaSeqCDR3</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">2</TD>
+        		<TD class="c2">5</TD>
+        		<TD class="c3">0.00347705146036</TD>
+        		<TD class="c4">TRBV20</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ2-7</TD>
+        		<TD class="c7">TRBV20</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ2</TD>
+        		<TD class="c10">TRBV20,TRBJ2-7</TD>
+        		<TD class="c11">TRBV20,TRBD1,TRBJ2-7</TD>
+        		<TD class="c13">GGTGCCCACAGGGGCTATGAACAGTAC</TD>
+        		<TD class="c14">GAHRGYEQY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">3</TD>
+        		<TD class="c2">25</TD>
+        		<TD class="c3">0.0173852573018</TD>
+        		<TD class="c4">TRBV5</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ1-1</TD>
+        		<TD class="c7">TRBV5</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ1</TD>
+        		<TD class="c10">TRBV5,TRBJ1-1</TD>
+        		<TD class="c11">TRBV5,TRBD1,TRBJ1-1</TD>
+        		<TD class="c13">GCCAGCAGCCGAGCGACAGGGGGCGGCACAGAAGTCTTC</TD>
+        		<TD class="c14">ASSRATGGGTEVF</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">4</TD>
+        		<TD class="c2">3</TD>
+        		<TD class="c3">0.00208623087622</TD>
+        		<TD class="c4">TRBV12-1</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ1-3</TD>
+        		<TD class="c7">TRBV12</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ1</TD>
+        		<TD class="c10">TRBV12-1,TRBJ1-3</TD>
+        		<TD class="c11">TRBV12-1,TRBD1,TRBJ1-3</TD>
+        		<TD class="c13">GCCAGCTCCCCTCCACAGGGGCGGGGAAATACGCTCTAT</TD>
+        		<TD class="c14">ASSPPQGRGNTLY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">6</TD>
+        		<TD class="c2">28</TD>
+        		<TD class="c3">0.019471488178</TD>
+        		<TD class="c4">TRBV13-2</TD>
+        		<TD class="c5">TRBD2</TD>
+        		<TD class="c6">TRBJ2-4</TD>
+        		<TD class="c7">TRBV13</TD>
+                <TD class="c8">TRBD2</TD>
+        		<TD class="c9">TRBJ2</TD>
+        		<TD class="c10">TRBV13-2,TRBJ2-4</TD>
+        		<TD class="c11">TRBV13-2,TRBD2,TRBJ2-4</TD>
+        		<TD class="c13">GCCAGCGGTGATCTACTGGGGGCTAGTCAAAACACCTTGTAC</TD>
+        		<TD class="c14">ASGDLLGASQNTLY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">7</TD>
+        		<TD class="c2">1</TD>
+        		<TD class="c3">0.000695410292072</TD>
+        		<TD class="c4">TRBV3</TD>
+        		<TD class="c5">TRBD2</TD>
+        		<TD class="c6">TRBJ2-4</TD>
+        		<TD class="c7">TRBV3</TD>
+                <TD class="c8">TRBD2</TD>
+        		<TD class="c9">TRBJ2</TD>
+        		<TD class="c10">TRBV3,TRBJ2-4</TD>
+        		<TD class="c11">TRBV3,TRBD2,TRBJ2-4</TD>
+        		<TD class="c13">GCCAGCAGCCCCACTGGGAGTCAAAACACCTTGTAC</TD>
+        		<TD class="c14">ASSPTGSQNTLY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">8</TD>
+        		<TD class="c2">10</TD>
+        		<TD class="c3">0.00695410292072</TD>
+        		<TD class="c4">TRBV1</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ2-5</TD>
+        		<TD class="c7">TRBV1</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ2</TD>
+        		<TD class="c10">TRBV1,TRBJ2-5</TD>
+        		<TD class="c11">TRBV1,TRBD1,TRBJ2-5</TD>
+        		<TD class="c13">ACCTGCAGTGGGGACAGTTACCAAGACACCCAGTAC</TD>
+        		<TD class="c14">TCSGDSYQDTQY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">9</TD>
+        		<TD class="c2">12</TD>
+        		<TD class="c3">0.00834492350487</TD>
+        		<TD class="c4">TRBV13-3</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ1-2</TD>
+        		<TD class="c7">TRBV13</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ1</TD>
+        		<TD class="c10">TRBV13-3,TRBJ1-2</TD>
+        		<TD class="c11">TRBV13-3,TRBD1,TRBJ1-2</TD>
+        		<TD class="c13">GCCAGCAGTGAACAGGGGACCGACTACACC</TD>
+        		<TD class="c14">ASSEQGTDYT</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">10</TD>
+        		<TD class="c2">1</TD>
+        		<TD class="c3">0.000695410292072</TD>
+        		<TD class="c4">TRBV13-2</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ1-4</TD>
+        		<TD class="c7">TRBV13</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ1</TD>
+        		<TD class="c10">TRBV13-2,TRBJ1-4</TD>
+        		<TD class="c11">TRBV13-2,TRBD1,TRBJ1-4</TD>
+        		<TD class="c13">GCCAGCGGTGGCCAGGGCGGCGAAAGATTATTT</TD>
+        		<TD class="c14">ASGGQGGERLF</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">11</TD>
+        		<TD class="c2">2</TD>
+        		<TD class="c3">0.00139082058414</TD>
+        		<TD class="c4">TRBV13-3</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ1-1</TD>
+        		<TD class="c7">TRBV13</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ1</TD>
+        		<TD class="c10">TRBV13-3,TRBJ1-1</TD>
+        		<TD class="c11">TRBV13-3,TRBD1,TRBJ1-1</TD>
+        		<TD class="c13">GCCAGCAATCGACAGGGCGGCACAGAAGTCTTC</TD>
+        		<TD class="c14">ASNRQGGTEVF</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">12</TD>
+        		<TD class="c2">19</TD>
+        		<TD class="c3">0.0132127955494</TD>
+        		<TD class="c4">TRBV1</TD>
+        		<TD class="c5">TRBD2</TD>
+        		<TD class="c6">TRBJ2-5</TD>
+        		<TD class="c7">TRBV1</TD>
+                <TD class="c8">TRBD2</TD>
+        		<TD class="c9">TRBJ2</TD>
+        		<TD class="c10">TRBV1,TRBJ2-5</TD>
+        		<TD class="c11">TRBV1,TRBD2,TRBJ2-5</TD>
+        		<TD class="c13">ACCTGCAGTGCCCCGGACTGGGGCGGGGACACCCAGTAC</TD>
+        		<TD class="c14">TCSAPDWGGDTQY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">13</TD>
+        		<TD class="c2">1</TD>
+        		<TD class="c3">0.000695410292072</TD>
+        		<TD class="c4">TRBV15</TD>
+        		<TD class="c5">TRBD2</TD>
+        		<TD class="c6">TRBJ1-1</TD>
+        		<TD class="c7">TRBV15</TD>
+                <TD class="c8">TRBD2</TD>
+        		<TD class="c9">TRBJ1</TD>
+        		<TD class="c10">TRBV15,TRBJ1-1</TD>
+        		<TD class="c11">TRBV15,TRBD2,TRBJ1-1</TD>
+        		<TD class="c13">CAACCTACAGAACCCAAGGACTCAGCTGTGTATCTGTGTGCCAGCAGTTTAGACAGAGAAGTCTTC</TD>
+        		<TD class="c14">QPTEPKDSAVYLCASSLDREVF</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">14</TD>
+        		<TD class="c2">5</TD>
+        		<TD class="c3">0.00347705146036</TD>
+        		<TD class="c4">TRBV29</TD>
+        		<TD class="c5">TRBD2</TD>
+        		<TD class="c6">TRBJ2-5</TD>
+        		<TD class="c7">TRBV29</TD>
+                <TD class="c8">TRBD2</TD>
+        		<TD class="c9">TRBJ2</TD>
+        		<TD class="c10">TRBV29,TRBJ2-5</TD>
+        		<TD class="c11">TRBV29,TRBD2,TRBJ2-5</TD>
+        		<TD class="c13">GCTAGCAGTTCCCTGGGGGTTGTTGGCACCCAGTAC</TD>
+        		<TD class="c14">ASSSLGVVGTQY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">15</TD>
+        		<TD class="c2">1</TD>
+        		<TD class="c3">0.000695410292072</TD>
+        		<TD class="c4">TRBV13-3</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ2-4</TD>
+        		<TD class="c7">TRBV13</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ2</TD>
+        		<TD class="c10">TRBV13-3,TRBJ2-4</TD>
+        		<TD class="c11">TRBV13-3,TRBD1,TRBJ2-4</TD>
+        		<TD class="c13">GCCAGCAGTGACAGGGGGCGACGGAACACCTTGTAC</TD>
+        		<TD class="c14">ASSDRGRRNTLY</TD>
+        	</TR>
+        	
+        	<TR>
+        		<TD class="c1">16</TD>
+        		<TD class="c2">3</TD>
+        		<TD class="c3">0.00208623087622</TD>
+        		<TD class="c4">TRBV31</TD>
+        		<TD class="c5">TRBD1</TD>
+        		<TD class="c6">TRBJ1-1</TD>
+        		<TD class="c7">TRBV31</TD>
+                <TD class="c8">TRBD1</TD>
+        		<TD class="c9">TRBJ1</TD>
+        		<TD class="c10">TRBV31,TRBJ1-1</TD>
+        		<TD class="c11">TRBV31,TRBD1,TRBJ1-1</TD>
+        		<TD class="c13">GCCTGGAGTCTAGACAGGGGGCACACAGAAGTCTTC</TD>
+        		<TD class="c14">AWSLDRGHTEVF</TD>
+        	</TR>
+        	
+        </table>
+        <div id="page_clone"></div>
+    </div>
+    </br>
+    <p class="premark"><b>说明</b>cloneCourt：某一clonetype的数量；cloneFraction：某一clonetype占整体的比值；bestV/D/JGene：最优的V/D/Jgene比对l；bestV/D/JFamily：最优的V/D/J gene family；nSeqCDR3：CDR3区域的核苷酸序列；aaSeqCDR3：CDR3区域的氨基酸序列。</p></br>  
+    
+    <!-------------------------------------------不同V/D/J基因使用频率-------------------------------------->
+    <a name="不同V/D/J基因使用频率"></a><h3>2.3 不同V/D/J基因使用频率</h3>
+    <p class="paragraph">V、D、J的多样性构成了免疫组库的多样性，不同个体对V、D、J的使用频率是存在差异的，研究使用频率的差异对揭示样品免疫组库的差异具有重要意义，这里统计分析样本的V、D、J的使用频率，并绘制饼图，在legand区域展示前六个使用最为频繁的基因，如下图所示。</p>
+    <div class="albumSlider">
+       <div class="fullview"> <img src="src/pictures/FractionOfVDJOfWAS4CD4TEM.png" alt="FractionOfVDJOfWAS4CD4TEM.png" title="FractionOfVDJOfWAS4CD4TEM.png" /></div>
+        <div class="slider">
+            <div class="button movebackward" title="向上滚动"></div>
+            <div class="imglistwrap">
+                <ul class="imglist">
+                	
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS4CD4TEM.png" ><img src="src/pictures/FractionOfVDJOfWAS4CD4TEM.png" alt="FractionOfVDJOfWAS4CD4TEM.png" title="FractionOfVDJOfWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS4CD8TCM.png" ><img src="src/pictures/FractionOfVDJOfWAS4CD8TCM.png" alt="FractionOfVDJOfWAS4CD8TCM.png" title="FractionOfVDJOfWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS6CD4TEM.png" ><img src="src/pictures/FractionOfVDJOfWAS6CD4TEM.png" alt="FractionOfVDJOfWAS6CD4TEM.png" title="FractionOfVDJOfWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS6CD8TCM.png" ><img src="src/pictures/FractionOfVDJOfWAS6CD8TCM.png" alt="FractionOfVDJOfWAS6CD8TCM.png" title="FractionOfVDJOfWAS6CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS8CD4TEM.png" ><img src="src/pictures/FractionOfVDJOfWAS8CD4TEM.png" alt="FractionOfVDJOfWAS8CD4TEM.png" title="FractionOfVDJOfWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS8CD8TCM.png" ><img src="src/pictures/FractionOfVDJOfWAS8CD8TCM.png" alt="FractionOfVDJOfWAS8CD8TCM.png" title="FractionOfVDJOfWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS9CD4TEM.png" ><img src="src/pictures/FractionOfVDJOfWAS9CD4TEM.png" alt="FractionOfVDJOfWAS9CD4TEM.png" title="FractionOfVDJOfWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/FractionOfVDJOfWAS9CD8TCM.png" ><img src="src/pictures/FractionOfVDJOfWAS9CD8TCM.png" alt="FractionOfVDJOfWAS9CD8TCM.png" title="FractionOfVDJOfWAS9CD8TCM.png" /></a></li>
+                    
+                </ul>
+            </div>
+            <div class="button moveforward" title="向下滚动"></div>
+        </div>
+    </div>
+    <p class="name">图 2-2 不同V/D/J基因使用频率统计图</p>    
+
+    <!--------------------------------------------不同V/D/J基因组合频率---------------------------------------->
+    <a name="不同V/D/J基因组合频率"></a><h3>2.4 不同V/D/J基因组合频率</h3>
+    <p class="paragraph">不同V、D、J基因的组合极大的丰富了免疫组库的多样性，其中以VJ和VDJ的组合尤为重要，这里统计样本的组合方式和频率，绘制VJ组合的3D图（展示前30个最高频次Vgene），如下图：</p>
+    <div class="albumSlider">
+       <div class="fullview"> <img src="src/pictures/DistributionOfVJCombinationOfWAS4CD4TEM.png" alt="DistributionOfVJCombinationOfWAS4CD4TEM.png" title="DistributionOfVJCombinationOfWAS4CD4TEM.png" /></div>
+        <div class="slider">
+            <div class="button movebackward" title="向上滚动"></div>
+            <div class="imglistwrap">
+                <ul class="imglist">
+                	
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS4CD4TEM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS4CD4TEM.png" alt="DistributionOfVJCombinationOfWAS4CD4TEM.png" title="DistributionOfVJCombinationOfWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS4CD8TCM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS4CD8TCM.png" alt="DistributionOfVJCombinationOfWAS4CD8TCM.png" title="DistributionOfVJCombinationOfWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS6CD4TEM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS6CD4TEM.png" alt="DistributionOfVJCombinationOfWAS6CD4TEM.png" title="DistributionOfVJCombinationOfWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS6CD8TCM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS6CD8TCM.png" alt="DistributionOfVJCombinationOfWAS6CD8TCM.png" title="DistributionOfVJCombinationOfWAS6CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS8CD4TEM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS8CD4TEM.png" alt="DistributionOfVJCombinationOfWAS8CD4TEM.png" title="DistributionOfVJCombinationOfWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS8CD8TCM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS8CD8TCM.png" alt="DistributionOfVJCombinationOfWAS8CD8TCM.png" title="DistributionOfVJCombinationOfWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS9CD4TEM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS9CD4TEM.png" alt="DistributionOfVJCombinationOfWAS9CD4TEM.png" title="DistributionOfVJCombinationOfWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/DistributionOfVJCombinationOfWAS9CD8TCM.png" ><img src="src/pictures/DistributionOfVJCombinationOfWAS9CD8TCM.png" alt="DistributionOfVJCombinationOfWAS9CD8TCM.png" title="DistributionOfVJCombinationOfWAS9CD8TCM.png" /></a></li>
+                    
+                </ul>
+            </div>
+            <div class="button moveforward" title="向下滚动"></div>
+        </div>
+    </div>
+    <p class="name">图 2-3 VJ Combination统计图</p>  
+	<p class="premark"><b>说明</b> X轴为V gene，Y轴为J gene，Z轴为相应组合的计数。</p></br>
+
+<!--------------------------------------------CDR3的长度分布---------------------------------------->
+<a name="CDR3的长度分布"></a><h3>2.5 CDR3的长度分布</h3>
+<p class="paragraph">统计每个样本中Clone所包含的CDR3区域核酸和氨基酸长度分布信息，并绘制柱状图，充分展示样本的特征以及样本间的差异。</p>
+<p class="center">
+    <img  src="src/pictures/CDR3LengthOfAmino.png" width="40%" height="40%"/>
+</p> 
+<p class="name">图2-4 样本的CDR3氨基酸长度分布图 (<a href="src/pictures/CDR3LengthOfAmino.png">点击大图</a>)</p>
+<p class="premark"> <b>说明</b> 横坐标为长度，纵坐标为频率。</p>
+</Br>
+<p class="center">
+    <img  src="src/pictures/CDR3LengthOfNucleotide.png" width="40%" height="40%"/>
+</p> 
+<p class="name">图2-5 样本的CDR3核苷酸长度分布图 (<a href="src/pictures/CDR3LengthOfNucleotide.png">点击大图</a>)</p>
+<p class="premark"> <b>说明</b> 横坐标为长度，纵坐标为频率。</p>
+
+<!--------------------------------------------丰富度和多样性评估---------------------------------------->
+<a name="丰富度和多样性评估"></a><h3>2.6 丰富度和多样性评估</h3>
+<p class="paragraph">评估免疫组库的丰富度和多样性是免疫组分析重要的工作，也最能体现出不同样本之间的差异。这里分析了样本的Rank abundance变化趋势以反映不同样本的丰富度关系，同时利用Hill指数，采用抽样的方法对样本的多样性特征进行评估。</p>
+<p class="paragraph">
+Rank-Abundance 曲线是分析多样性的一种方式。构建方法是统计不同样本中，每一个CDR3区所含的序列数，将CDR3区按丰度（CDR3区所含有的序列条数）由大到小等级排序，再以CDR3区丰度高低的等级为横坐标，以每个CDR3区所含的序列丰度的频率为纵坐标做图。Rank-Abundance 曲线可用来解释多样性的两个方面：即CDR3区的丰度和不同CDR3区序列类型的均匀度。在水平方向，CDR3区的丰度由曲线的宽度来反映，CDR3区的丰度越高，曲线在横轴上范围越大；曲线的形状（平滑程度）反映了样本中CDR3区序列类型的均匀度，曲线越陡峭，样本中CDR3区序列类型的分布越不均匀。反之则趋于均匀。 </p>
+
+<p class="paragraph">Hill指数是连续变量q的函数，能够直接反映三个样本多样性指数，也就是丰富度（Richness）、香浓指数（Shannon index）和Simpson index。当q=0时，Hill指数也就是Richness值；当q=1时，Hill值是
+Shannon index的指数值；当q=2时，Hill值是Simpson index的倒数；当q趋近于无穷大时，Hill指数能够反映出样本中最大的成分频率。</p>
+<p class="center">
+    <img  src="src/pictures/Abundance.png" width="40%" height="40%"/>
+</p> 
+<p class="name">图2-6 样本Rank abundance分布曲线图 (<a href="src/pictures/Abundance.png">点击大图</a>)</p>
+<p class="premark"> <b>说明</b> 横坐标表示CDR3丰度编号，纵坐标表示该编号对应的CDR3丰度频率，阴影区表示采用Bootstrap方法的0.95置信区间。</p>
+<p class="center">
+    <img  src="src/pictures/Diversity.png" width="40%" height="40%"/>
+</p> 
+<p class="name">图2-7 样本Diversity分布曲线图 (<a href="src/pictures/Diversity.png">点击大图</a>)</p>
+<p class="premark"> <b>说明</b> 横坐标表示不同q值，纵坐标表示该q值下样本的多样性。</p>
+
+<p class="paragraph">
+丰富度（Richness）、香浓指数（Shannon index）和Simpson index 这三个指数都是描述样本多样性的指标。从最初的针对生态学中生态群落多样性的使用，到后来应用到动物体内的微生物生态多样性、个体CDR3 区序列多样性评估等研究领域。<br><br>
+Richness：种的数目或丰富度（species richness）
+最初用于描述一个群落或生境中物种数目的多寡。Poole（1974）认为只有这个指标才是唯一真正客观的多样性指标.在统计种的数目的时候,需要说明多大的面积,以便比较.在多层次的森林群落中必须说明层次和径级,否则是无法比较的。<br><br>
+Simpson：用来估算样本中微生物多样性指数之一，由Edward HughSimpson ( 1949) 提出，在生态学中常用来定量描述一个区域的生物多样性。Simpson 指数值越大，说明群落多样性越低。<br><br>
+Shannon：用来估算样本中微生物多样性指数之一。它与Simpson 多样性指数常用于反映alpha 多样性指数。Shannon 值越大，说明群落多样性越高。<br><br>
+</p>
+<p class="paragraph"> 
+样本 Diversity 分布曲线图就是把以上三种主流的、科研上使用得较多的多样性指数整合在一起进行分析。数值越高，则多样性越好。也可以理解为，同时比较横轴q=0，q=1，q=2 时各个样本的纵坐标数值，纵坐标数值越高多样性越高。而由于Simpson index 越高多样性越低，所以这里分析的是其倒数。
+</p>
+
+
+<!--------------------------------------------样本间相关性分析---------------------------------------->
+<a name="样本间相关性分析"></a><h3>2.7 样本间相关性分析</h3>
+<p class="paragraph">对于两个样本之间的比较，可以从多个角度比评估两者这件的相关性和相似性，这里采用评估样本间CDR3序列的相似性和VDJ基因以及相互组合的共线性去评估样本之间的相关性。我们可以通过线性回归的方式考察组间差异及组内重复情况。样品间相关系数一般用R2表示，是检验实验可靠性和样本选择合理性的重要指标，R²最大值为1。R²的值越接近1，说明回归直线对观测值的拟合程度越好；反之，R²的值越小，说明回归直线对观测值的拟合程度越差。相关系数越接近1表明样品之间的相似度越高，反之亦然。人类组织来源样品无法获得严格意义上的生物学重复，通过增加样本量可以提高分析结果的统计意义。</p>
+<a name="样本间CDR3序列的相似性"></a><h4>2.7.1 样本间CDR3序列的相似性</h4>
+<p class="paragraph">比较样本间CDR3的核苷酸和氨基酸序列的重叠情况以评估样本间CDR3序列的相似性，根据 CDR3 的核苷酸序列或氨基酸序列的重叠情况所绘制的韦恩图，是基于特定的CDR3区其Clonetype 的氨基酸序列或核苷酸序列，在样本间的数目情况差异所绘制的。样本间存在相同的Clonetype 氨基酸序列，则在韦恩图的重叠区显示，韦恩图如下（比较样本数多于6个是不绘制韦恩图）：</p>
+</br></br></br></br></br></br></br></br></br></br></br></br>
+
+<p class="name">表 2-3 CDR3的氨基酸序列的重叠情况</p>
+<div style="text-align:center;">
+    <table id="CDR3Diff">
+	
+        <TR>
+        	
+        		<TD class="c">Clonetype</TD>
+        	
+        		<TD class="c">WAS9CD8TCM</TD>
+        	
+        		<TD class="c">WAS6CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD8TCM</TD>
+        	
+        		<TD class="c">WAS8CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD4TEM</TD>
+        	
+        		<TD class="c">WAS6CD4TEM</TD>
+        	
+        		<TD class="c">WAS8CD4TEM</TD>
+        	
+        		<TD class="c">WAS9CD4TEM</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSLAGIYAEQF</TD>
+        	
+        		<TD class="c">0.0199927299164</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSDGDWYEQY</TD>
+        	
+        		<TD class="c">0.0130861504907</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSPTGGGQDTQY</TD>
+        	
+        		<TD class="c">0.00799709196656</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TCSGDWGGQNTLY</TD>
+        	
+        		<TD class="c">0.00763358778626</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TCSAGLGVGDTQY</TD>
+        	
+        		<TD class="c">0.00690657942566</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">GARTGTNTEVF</TD>
+        	
+        		<TD class="c">0.00654307524537</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">SSSQSSGGAGQDTQY</TD>
+        	
+        		<TD class="c">0.00617957106507</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSQAGTEDTQY</TD>
+        	
+        		<TD class="c">0.00581606688477</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">AWRGTGNYAEQF</TD>
+        	
+        		<TD class="c">0.00545256270447</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSLGPAETLY</TD>
+        	
+        		<TD class="c">0.00545256270447</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TCSAQDSYEQY</TD>
+        	
+        		<TD class="c">0.00545256270447</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSGPGTISNERLF</TD>
+        	
+        		<TD class="c">0.00545256270447</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSPGTFQDTQY</TD>
+        	
+        		<TD class="c">0.00508905852417</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSQGDQNTLY</TD>
+        	
+        		<TD class="c">0.00508905852417</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        </TR>
+    
+        </table>
+        <div id="page_clone"></div>
+    </div>
+<a name="样本间VDJ基因以及相互组合的共线性"></a><h4>2.7.2 样本间VDJ基因以及相互组合的共线性</h4>
+<p class="paragraph">
+该分析均基于样本间 V 基因，VJ基因组合，VDJ 基因组合的频率差异表格来绘制的相关性图，图中的横坐标和众坐标均为频率值。若两个样本的V基因,VJ基因组合, VDJ 基因组合其各自的频率相差较大，则会在图上标记出来。</p>
+<p class="paragraph" 比较样本间的V、VJ Combination和VDJ Combination的frequency的共线性情况以评估样本之间的相似性，如下所示：</p>
+<p class="paragraph">统计样本间V基因的频率差异，给出具体的差异情况，并根据频率绘制共线性图，计算相关共线性，结果如下所示：</p>
+    <div class="albumSlider">
+       <div class="fullview"> <img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></div>
+        <div class="slider">
+            <div class="button movebackward" title="向上滚动"></div>
+            <div class="imglistwrap">
+                <ul class="imglist">
+                	
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD4TEMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS4CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVGeneBetweenWAS4CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS6CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVGeneBetweenWAS6CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS6CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVGeneBetweenWAS6CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS6CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVGeneBetweenWAS6CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS8CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS8CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS8CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVGeneBetweenWAS8CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS8CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVGeneBetweenWAS8CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD8TCM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD8TCM.png" alt="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD8TCM.png" title="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS6CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVGeneBetweenWAS9CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVGeneBetweenWAS9CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                </ul>
+            </div>
+            <div class="button moveforward" title="向下滚动"></div>
+        </div>
+    </div>
+<p class="name">图 2-10 样本间V基因共线性</p>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<p class="name">表 2-4 样本间V基因的频率差异</p>
+<div style="text-align:center;">
+    <table id="VGeneDiff">
+	
+        <TR>
+        	
+        		<TD class="c">VGene</TD>
+        	
+        		<TD class="c">WAS9CD8TCM</TD>
+        	
+        		<TD class="c">WAS6CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD8TCM</TD>
+        	
+        		<TD class="c">WAS8CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD4TEM</TD>
+        	
+        		<TD class="c">WAS6CD4TEM</TD>
+        	
+        		<TD class="c">WAS8CD4TEM</TD>
+        	
+        		<TD class="c">WAS9CD4TEM</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2</TD>
+        	
+        		<TD class="c">0.1237</TD>
+        	
+        		<TD class="c">0.1141</TD>
+        	
+        		<TD class="c">0.1234</TD>
+        	
+        		<TD class="c">0.1394</TD>
+        	
+        		<TD class="c">0.0616</TD>
+        	
+        		<TD class="c">0.0899</TD>
+        	
+        		<TD class="c">0.0884</TD>
+        	
+        		<TD class="c">0.0685</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-1</TD>
+        	
+        		<TD class="c">0.0956</TD>
+        	
+        		<TD class="c">0.0799</TD>
+        	
+        		<TD class="c">0.0763</TD>
+        	
+        		<TD class="c">0.0791</TD>
+        	
+        		<TD class="c">0.0893</TD>
+        	
+        		<TD class="c">0.0749</TD>
+        	
+        		<TD class="c">0.0908</TD>
+        	
+        		<TD class="c">0.0868</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-3</TD>
+        	
+        		<TD class="c">0.0908</TD>
+        	
+        		<TD class="c">0.055</TD>
+        	
+        		<TD class="c">0.0844</TD>
+        	
+        		<TD class="c">0.0603</TD>
+        	
+        		<TD class="c">0.0555</TD>
+        	
+        		<TD class="c">0.0712</TD>
+        	
+        		<TD class="c">0.0653</TD>
+        	
+        		<TD class="c">0.0667</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV5</TD>
+        	
+        		<TD class="c">0.0787</TD>
+        	
+        		<TD class="c">0.0699</TD>
+        	
+        		<TD class="c">0.0698</TD>
+        	
+        		<TD class="c">0.0804</TD>
+        	
+        		<TD class="c">0.0567</TD>
+        	
+        		<TD class="c">0.02</TD>
+        	
+        		<TD class="c">0.0381</TD>
+        	
+        		<TD class="c">0.0421</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV1</TD>
+        	
+        		<TD class="c">0.0779</TD>
+        	
+        		<TD class="c">0.1091</TD>
+        	
+        		<TD class="c">0.0877</TD>
+        	
+        		<TD class="c">0.0858</TD>
+        	
+        		<TD class="c">0.0647</TD>
+        	
+        		<TD class="c">0.04</TD>
+        	
+        		<TD class="c">0.0369</TD>
+        	
+        		<TD class="c">0.0537</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV3</TD>
+        	
+        		<TD class="c">0.0755</TD>
+        	
+        		<TD class="c">0.0716</TD>
+        	
+        		<TD class="c">0.0617</TD>
+        	
+        		<TD class="c">0.0777</TD>
+        	
+        		<TD class="c">0.0548</TD>
+        	
+        		<TD class="c">0.0674</TD>
+        	
+        		<TD class="c">0.0455</TD>
+        	
+        		<TD class="c">0.0566</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV19</TD>
+        	
+        		<TD class="c">0.0594</TD>
+        	
+        		<TD class="c">0.0608</TD>
+        	
+        		<TD class="c">0.0763</TD>
+        	
+        		<TD class="c">0.061</TD>
+        	
+        		<TD class="c">0.0444</TD>
+        	
+        		<TD class="c">0.0487</TD>
+        	
+        		<TD class="c">0.039</TD>
+        	
+        		<TD class="c">0.0415</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV31</TD>
+        	
+        		<TD class="c">0.0562</TD>
+        	
+        		<TD class="c">0.0666</TD>
+        	
+        		<TD class="c">0.0633</TD>
+        	
+        		<TD class="c">0.0402</TD>
+        	
+        		<TD class="c">0.0191</TD>
+        	
+        		<TD class="c">0.0287</TD>
+        	
+        		<TD class="c">0.0168</TD>
+        	
+        		<TD class="c">0.0203</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV15</TD>
+        	
+        		<TD class="c">0.0538</TD>
+        	
+        		<TD class="c">0.0774</TD>
+        	
+        		<TD class="c">0.1006</TD>
+        	
+        		<TD class="c">0.0657</TD>
+        	
+        		<TD class="c">0.0487</TD>
+        	
+        		<TD class="c">0.0487</TD>
+        	
+        		<TD class="c">0.0494</TD>
+        	
+        		<TD class="c">0.0508</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV16</TD>
+        	
+        		<TD class="c">0.049</TD>
+        	
+        		<TD class="c">0.0716</TD>
+        	
+        		<TD class="c">0.0276</TD>
+        	
+        		<TD class="c">0.0416</TD>
+        	
+        		<TD class="c">0.0684</TD>
+        	
+        		<TD class="c">0.0674</TD>
+        	
+        		<TD class="c">0.0908</TD>
+        	
+        		<TD class="c">0.0696</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV4</TD>
+        	
+        		<TD class="c">0.045</TD>
+        	
+        		<TD class="c">0.0425</TD>
+        	
+        		<TD class="c">0.0276</TD>
+        	
+        		<TD class="c">0.0369</TD>
+        	
+        		<TD class="c">0.0474</TD>
+        	
+        		<TD class="c">0.0512</TD>
+        	
+        		<TD class="c">0.0396</TD>
+        	
+        		<TD class="c">0.0409</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV20</TD>
+        	
+        		<TD class="c">0.0305</TD>
+        	
+        		<TD class="c">0.0275</TD>
+        	
+        		<TD class="c">0.0276</TD>
+        	
+        		<TD class="c">0.0302</TD>
+        	
+        		<TD class="c">0.0173</TD>
+        	
+        		<TD class="c">0.0062</TD>
+        	
+        		<TD class="c">0.0123</TD>
+        	
+        		<TD class="c">0.0163</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV29</TD>
+        	
+        		<TD class="c">0.0289</TD>
+        	
+        		<TD class="c">0.0266</TD>
+        	
+        		<TD class="c">0.0195</TD>
+        	
+        		<TD class="c">0.0315</TD>
+        	
+        		<TD class="c">0.0345</TD>
+        	
+        		<TD class="c">0.0562</TD>
+        	
+        		<TD class="c">0.0593</TD>
+        	
+        		<TD class="c">0.0427</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV12-1</TD>
+        	
+        		<TD class="c">0.0281</TD>
+        	
+        		<TD class="c">0.015</TD>
+        	
+        		<TD class="c">0.0325</TD>
+        	
+        		<TD class="c">0.0228</TD>
+        	
+        		<TD class="c">0.0912</TD>
+        	
+        		<TD class="c">0.0749</TD>
+        	
+        		<TD class="c">0.107</TD>
+        	
+        		<TD class="c">0.1042</TD>
+        	
+        </TR>
+    
+        </table>
+        <div id="page_clone"></div>
+    </div>
+<br>
+<p class="paragraph">统计样本间VJ基因组合的频率差异，给出具体的差异情况，并根据频率绘制共线性图，计算相关共线性，结果如下所示：</p>
+    <div class="albumSlider">
+       <div class="fullview"> <img src="src/pictures/ComparisonOfVJBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></div>
+        <div class="slider">
+            <div class="button movebackward" title="向上滚动"></div>
+            <div class="imglistwrap">
+                <ul class="imglist">
+                	
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD4TEMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVJBetweenWAS4CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS4CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVJBetweenWAS4CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVJBetweenWAS4CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVJBetweenWAS6CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVJBetweenWAS6CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVJBetweenWAS6CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVJBetweenWAS6CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVJBetweenWAS6CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVJBetweenWAS6CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVJBetweenWAS6CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVJBetweenWAS6CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS6CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVJBetweenWAS6CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVJBetweenWAS6CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS8CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS8CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVJBetweenWAS8CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVJBetweenWAS8CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVJBetweenWAS8CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVJBetweenWAS8CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVJBetweenWAS8CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVJBetweenWAS8CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVJBetweenWAS8CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVJBetweenWAS8CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS8CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVJBetweenWAS8CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVJBetweenWAS8CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVJBetweenWAS9CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD8TCM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD8TCM.png" alt="ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD8TCM.png" title="ComparisonOfVJBetweenWAS9CD8TCMandWAS6CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVJBetweenWAS9CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVJBetweenWAS9CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVJBetweenWAS9CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVJBetweenWAS9CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                </ul>
+            </div>
+            <div class="button moveforward" title="向下滚动"></div>
+        </div>
+    </div>
+<p class="name">图 2-11 样本间VJ基因共线性</p>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<p class="name">表 2-5 样本间VJ基因组合的频率差异</p>
+<div style="text-align:center;">
+    <table id="VJDiff">
+	
+        <TR>
+        	
+        		<TD class="c">VJGene</TD>
+        	
+        		<TD class="c">WAS9CD8TCM</TD>
+        	
+        		<TD class="c">WAS6CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD8TCM</TD>
+        	
+        		<TD class="c">WAS8CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD4TEM</TD>
+        	
+        		<TD class="c">WAS6CD4TEM</TD>
+        	
+        		<TD class="c">WAS8CD4TEM</TD>
+        	
+        		<TD class="c">WAS9CD4TEM</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV3|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0249</TD>
+        	
+        		<TD class="c">0.0167</TD>
+        	
+        		<TD class="c">0.0065</TD>
+        	
+        		<TD class="c">0.0168</TD>
+        	
+        		<TD class="c">0.016</TD>
+        	
+        		<TD class="c">0.0262</TD>
+        	
+        		<TD class="c">0.012</TD>
+        	
+        		<TD class="c">0.0151</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0249</TD>
+        	
+        		<TD class="c">0.0175</TD>
+        	
+        		<TD class="c">0.0211</TD>
+        	
+        		<TD class="c">0.0282</TD>
+        	
+        		<TD class="c">0.0179</TD>
+        	
+        		<TD class="c">0.0125</TD>
+        	
+        		<TD class="c">0.0195</TD>
+        	
+        		<TD class="c">0.0157</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-1|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0249</TD>
+        	
+        		<TD class="c">0.0142</TD>
+        	
+        		<TD class="c">0.0081</TD>
+        	
+        		<TD class="c">0.0181</TD>
+        	
+        		<TD class="c">0.024</TD>
+        	
+        		<TD class="c">0.0112</TD>
+        	
+        		<TD class="c">0.0216</TD>
+        	
+        		<TD class="c">0.0165</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV5|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0225</TD>
+        	
+        		<TD class="c">0.0092</TD>
+        	
+        		<TD class="c">0.0179</TD>
+        	
+        		<TD class="c">0.0147</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        		<TD class="c">0.0108</TD>
+        	
+        		<TD class="c">0.0087</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBJ2-5</TD>
+        	
+        		<TD class="c">0.0201</TD>
+        	
+        		<TD class="c">0.0183</TD>
+        	
+        		<TD class="c">0.0195</TD>
+        	
+        		<TD class="c">0.0174</TD>
+        	
+        		<TD class="c">0.0074</TD>
+        	
+        		<TD class="c">0.0175</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.0107</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-3|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0185</TD>
+        	
+        		<TD class="c">0.0083</TD>
+        	
+        		<TD class="c">0.013</TD>
+        	
+        		<TD class="c">0.0101</TD>
+        	
+        		<TD class="c">0.0142</TD>
+        	
+        		<TD class="c">0.015</TD>
+        	
+        		<TD class="c">0.0132</TD>
+        	
+        		<TD class="c">0.0116</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV15|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0161</TD>
+        	
+        		<TD class="c">0.02</TD>
+        	
+        		<TD class="c">0.0146</TD>
+        	
+        		<TD class="c">0.0188</TD>
+        	
+        		<TD class="c">0.0148</TD>
+        	
+        		<TD class="c">0.005</TD>
+        	
+        		<TD class="c">0.0153</TD>
+        	
+        		<TD class="c">0.0174</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBJ1-1</TD>
+        	
+        		<TD class="c">0.0145</TD>
+        	
+        		<TD class="c">0.0192</TD>
+        	
+        		<TD class="c">0.0049</TD>
+        	
+        		<TD class="c">0.0141</TD>
+        	
+        		<TD class="c">0.0031</TD>
+        	
+        		<TD class="c">0.0087</TD>
+        	
+        		<TD class="c">0.0069</TD>
+        	
+        		<TD class="c">0.0044</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV1|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0137</TD>
+        	
+        		<TD class="c">0.0158</TD>
+        	
+        		<TD class="c">0.0146</TD>
+        	
+        		<TD class="c">0.0201</TD>
+        	
+        		<TD class="c">0.0068</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        		<TD class="c">0.0069</TD>
+        	
+        		<TD class="c">0.0102</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-1|TRBJ2-4</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.0133</TD>
+        	
+        		<TD class="c">0.0146</TD>
+        	
+        		<TD class="c">0.0127</TD>
+        	
+        		<TD class="c">0.008</TD>
+        	
+        		<TD class="c">0.0062</TD>
+        	
+        		<TD class="c">0.0087</TD>
+        	
+        		<TD class="c">0.011</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-1|TRBJ2-1</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.0067</TD>
+        	
+        		<TD class="c">0.0049</TD>
+        	
+        		<TD class="c">0.008</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.0125</TD>
+        	
+        		<TD class="c">0.0183</TD>
+        	
+        		<TD class="c">0.0122</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV31|TRBJ2-1</TD>
+        	
+        		<TD class="c">0.012</TD>
+        	
+        		<TD class="c">0.0058</TD>
+        	
+        		<TD class="c">0.0032</TD>
+        	
+        		<TD class="c">0.0047</TD>
+        	
+        		<TD class="c">0.0037</TD>
+        	
+        		<TD class="c">0.0062</TD>
+        	
+        		<TD class="c">0.0018</TD>
+        	
+        		<TD class="c">0.0035</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBJ2-3</TD>
+        	
+        		<TD class="c">0.012</TD>
+        	
+        		<TD class="c">0.0042</TD>
+        	
+        		<TD class="c">0.0114</TD>
+        	
+        		<TD class="c">0.0107</TD>
+        	
+        		<TD class="c">0.0043</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        		<TD class="c">0.0111</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV31|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0112</TD>
+        	
+        		<TD class="c">0.0142</TD>
+        	
+        		<TD class="c">0.0195</TD>
+        	
+        		<TD class="c">0.006</TD>
+        	
+        		<TD class="c">0.0043</TD>
+        	
+        		<TD class="c">0.005</TD>
+        	
+        		<TD class="c">0.0027</TD>
+        	
+        		<TD class="c">0.0046</TD>
+        	
+        </TR>
+    
+        </table>
+        <div id="page_clone"></div>
+    </div>
+<br>
+<p class="paragraph">统计样本间VDJ基因组合的频率差异，并根据频率绘制共线性图，计算相关共线性，结果如下所示：</p>
+    <div class="albumSlider">
+       <div class="fullview"> <img src="src/pictures/ComparisonOfVDJBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></div>
+        <div class="slider">
+            <div class="button movebackward" title="向上滚动"></div>
+            <div class="imglistwrap">
+                <ul class="imglist">
+                	
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD4TEMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVDJBetweenWAS4CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS4CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVDJBetweenWAS4CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVDJBetweenWAS4CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVDJBetweenWAS6CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVDJBetweenWAS6CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVDJBetweenWAS6CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVDJBetweenWAS6CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVDJBetweenWAS6CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVDJBetweenWAS6CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVDJBetweenWAS6CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVDJBetweenWAS6CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS6CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVDJBetweenWAS6CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVDJBetweenWAS6CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS8CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS8CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVDJBetweenWAS8CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVDJBetweenWAS8CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVDJBetweenWAS8CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVDJBetweenWAS8CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVDJBetweenWAS8CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVDJBetweenWAS8CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVDJBetweenWAS8CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVDJBetweenWAS8CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS8CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVDJBetweenWAS8CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVDJBetweenWAS8CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVDJBetweenWAS9CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD8TCM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD8TCM.png" alt="ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD8TCM.png" title="ComparisonOfVDJBetweenWAS9CD8TCMandWAS6CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVDJBetweenWAS9CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVDJBetweenWAS9CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVDJBetweenWAS9CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVDJBetweenWAS9CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                </ul>
+            </div>
+            <div class="button moveforward" title="向下滚动"></div>
+        </div>
+    </div>
+<p class="name">图 2-12 样本间VDJ基因共线性</p>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<p class="name">表 2-6 样本间VDJ基因组合的频率差异</p>
+<div style="text-align:center;">
+    <table id="VDJDiff">
+	
+        <TR>
+        	
+        		<TD class="c">VDJGene</TD>
+        	
+        		<TD class="c">WAS9CD8TCM</TD>
+        	
+        		<TD class="c">WAS6CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD8TCM</TD>
+        	
+        		<TD class="c">WAS8CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD4TEM</TD>
+        	
+        		<TD class="c">WAS6CD4TEM</TD>
+        	
+        		<TD class="c">WAS8CD4TEM</TD>
+        	
+        		<TD class="c">WAS9CD4TEM</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV3|TRBD2|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0185</TD>
+        	
+        		<TD class="c">0.0092</TD>
+        	
+        		<TD class="c">0.0049</TD>
+        	
+        		<TD class="c">0.0127</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.02</TD>
+        	
+        		<TD class="c">0.0081</TD>
+        	
+        		<TD class="c">0.0107</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBD2|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0177</TD>
+        	
+        		<TD class="c">0.01</TD>
+        	
+        		<TD class="c">0.0179</TD>
+        	
+        		<TD class="c">0.0154</TD>
+        	
+        		<TD class="c">0.0148</TD>
+        	
+        		<TD class="c">0.01</TD>
+        	
+        		<TD class="c">0.0123</TD>
+        	
+        		<TD class="c">0.011</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBD1|TRBJ1-1</TD>
+        	
+        		<TD class="c">0.0137</TD>
+        	
+        		<TD class="c">0.0183</TD>
+        	
+        		<TD class="c">0.0049</TD>
+        	
+        		<TD class="c">0.0127</TD>
+        	
+        		<TD class="c">0.0031</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        		<TD class="c">0.0054</TD>
+        	
+        		<TD class="c">0.0044</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV5|TRBD2|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.0017</TD>
+        	
+        		<TD class="c">0.013</TD>
+        	
+        		<TD class="c">0.0101</TD>
+        	
+        		<TD class="c">0.0062</TD>
+        	
+        		<TD class="c">0.0037</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        		<TD class="c">0.0052</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBD2|TRBJ2-5</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.0058</TD>
+        	
+        		<TD class="c">0.0146</TD>
+        	
+        		<TD class="c">0.0094</TD>
+        	
+        		<TD class="c">0.0049</TD>
+        	
+        		<TD class="c">0.01</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        		<TD class="c">0.009</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-1|TRBD1|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0129</TD>
+        	
+        		<TD class="c">0.01</TD>
+        	
+        		<TD class="c">0.0016</TD>
+        	
+        		<TD class="c">0.0067</TD>
+        	
+        		<TD class="c">0.0092</TD>
+        	
+        		<TD class="c">0.0025</TD>
+        	
+        		<TD class="c">0.0069</TD>
+        	
+        		<TD class="c">0.0064</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-3|TRBD2|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.012</TD>
+        	
+        		<TD class="c">0.0058</TD>
+        	
+        		<TD class="c">0.0097</TD>
+        	
+        		<TD class="c">0.0054</TD>
+        	
+        		<TD class="c">0.0086</TD>
+        	
+        		<TD class="c">0.0112</TD>
+        	
+        		<TD class="c">0.0066</TD>
+        	
+        		<TD class="c">0.0032</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-1|TRBD2|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.012</TD>
+        	
+        		<TD class="c">0.0042</TD>
+        	
+        		<TD class="c">0.0065</TD>
+        	
+        		<TD class="c">0.0114</TD>
+        	
+        		<TD class="c">0.0148</TD>
+        	
+        		<TD class="c">0.0087</TD>
+        	
+        		<TD class="c">0.0147</TD>
+        	
+        		<TD class="c">0.0102</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV3|TRBD1|TRBJ1-1</TD>
+        	
+        		<TD class="c">0.0104</TD>
+        	
+        		<TD class="c">0.0058</TD>
+        	
+        		<TD class="c">0.0049</TD>
+        	
+        		<TD class="c">0.008</TD>
+        	
+        		<TD class="c">0.0018</TD>
+        	
+        		<TD class="c">0.005</TD>
+        	
+        		<TD class="c">0.0021</TD>
+        	
+        		<TD class="c">0.0035</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV15|TRBD2|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0104</TD>
+        	
+        		<TD class="c">0.0125</TD>
+        	
+        		<TD class="c">0.0065</TD>
+        	
+        		<TD class="c">0.0107</TD>
+        	
+        		<TD class="c">0.0123</TD>
+        	
+        		<TD class="c">0.0037</TD>
+        	
+        		<TD class="c">0.009</TD>
+        	
+        		<TD class="c">0.0122</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV5|TRBD1|TRBJ2-7</TD>
+        	
+        		<TD class="c">0.0096</TD>
+        	
+        		<TD class="c">0.0075</TD>
+        	
+        		<TD class="c">0.0049</TD>
+        	
+        		<TD class="c">0.0047</TD>
+        	
+        		<TD class="c">0.0068</TD>
+        	
+        		<TD class="c">0.0037</TD>
+        	
+        		<TD class="c">0.0033</TD>
+        	
+        		<TD class="c">0.0035</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBD2|TRBJ2-1</TD>
+        	
+        		<TD class="c">0.0096</TD>
+        	
+        		<TD class="c">0.0083</TD>
+        	
+        		<TD class="c">0.0081</TD>
+        	
+        		<TD class="c">0.0094</TD>
+        	
+        		<TD class="c">0.008</TD>
+        	
+        		<TD class="c">0.0137</TD>
+        	
+        		<TD class="c">0.0111</TD>
+        	
+        		<TD class="c">0.0104</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV13-2|TRBD2|TRBJ2-3</TD>
+        	
+        		<TD class="c">0.0096</TD>
+        	
+        		<TD class="c">0.0042</TD>
+        	
+        		<TD class="c">0.0097</TD>
+        	
+        		<TD class="c">0.0054</TD>
+        	
+        		<TD class="c">0.0031</TD>
+        	
+        		<TD class="c">0.005</TD>
+        	
+        		<TD class="c">0.0078</TD>
+        	
+        		<TD class="c">0.0061</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">TRBV4|TRBD2|TRBJ2-1</TD>
+        	
+        		<TD class="c">0.0088</TD>
+        	
+        		<TD class="c">0.0025</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.0027</TD>
+        	
+        		<TD class="c">0.0043</TD>
+        	
+        		<TD class="c">0.0012</TD>
+        	
+        		<TD class="c">0.0039</TD>
+        	
+        		<TD class="c">0.0046</TD>
+        	
+        </TR>
+    
+        </table>
+        <div id="page_clone"></div>
+    </div>
+<p class="paragraph">  从基因家族的角度可以在更加宏观的角度评估样本间的相似性，这里针对V gene绘制共线性图，如下图所示：</p>
+    <div class="albumSlider">
+       <div class="fullview"> <img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></div>
+        <div class="slider">
+            <div class="button movebackward" title="向上滚动"></div>
+            <div class="imglistwrap">
+                <ul class="imglist">
+                	
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS6CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS6CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS4CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS8CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS8CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS6CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS6CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS8CD4TEMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS8CD4TEMandWAS9CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS8CD4TEMandWAS9CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS8CD4TEMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS8CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD8TCM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD8TCM.png" alt="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD8TCM.png" title="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS4CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD8TCM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD8TCM.png" alt="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD8TCM.png" title="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS6CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD4TEM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD8TCM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD8TCM.png" alt="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD8TCM.png" title="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS8CD8TCM.png" /></a></li>
+                    
+                    <li><a id="example2" href="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS9CD4TEM.png" ><img src="src/pictures/ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS9CD4TEM.png" alt="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS9CD4TEM.png" title="ComparisonOfVFamilyBetweenWAS9CD8TCMandWAS9CD4TEM.png" /></a></li>
+                    
+                </ul>
+            </div>
+            <div class="button moveforward" title="向下滚动"></div>
+        </div>
+    </div>
+<p class="name">图 2-13 样本间VFamily基因共线性</p>
+
+
+<a name="样本间差异假设检验分析"></a><h4>2.7.3 样本间差异假设检验分析</h4>
+<p class="paragraph">为探究样本间的差异性，采用双样本T检验的方法对样本的V基因频率、VJ组合频率、VDJ组合频率和Clonetype频率进行假设检验分析，部分结果如下表所示：</p>
+</br></br></br></br></br></br></br></br></br></br>
+<p class="name">表 2-7 样本间假设检验分析</p>
+<div style="text-align:center;">
+    <table id="TestDiff">
+	
+        <TR>
+        	
+        		<TD class="c">Clonetype</TD>
+        	
+        		<TD class="c">WAS9CD8TCM</TD>
+        	
+        		<TD class="c">WAS6CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD8TCM</TD>
+        	
+        		<TD class="c">WAS8CD8TCM</TD>
+        	
+        		<TD class="c">WAS4CD4TEM</TD>
+        	
+        		<TD class="c">WAS6CD4TEM</TD>
+        	
+        		<TD class="c">WAS8CD4TEM</TD>
+        	
+        		<TD class="c">WAS9CD4TEM</TD>
+        	
+        		<TD class="c">Pvalue</TD>
+        	
+        		<TD class="c">Qvalue</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSRDSYEQY</TD>
+        	
+        		<TD class="c">0.00327153762268</TD>
+        	
+        		<TD class="c">0.00292864749734</TD>
+        	
+        		<TD class="c">0.00208623087622</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000459031443654</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.0388616731389</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSFTGGDTEVF</TD>
+        	
+        		<TD class="c">0.00254452926209</TD>
+        	
+        		<TD class="c">0.00452609158679</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.00567502986858</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.0427579030843</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSRGTGGYEQY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000447227191413</TD>
+        	
+        		<TD class="c">0.000459031443654</TD>
+        	
+        		<TD class="c">0.000671591672263</TD>
+        	
+        		<TD class="c">0.0314515854731</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSPGQTNSDYT</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000229515721827</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0305287331289</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSLSGLGGAEQF</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000229515721827</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0305287331289</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASGDWGQDTQY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000447227191413</TD>
+        	
+        		<TD class="c">0.000229515721827</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0487196452041</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSPGHYEQY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000459031443654</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0403747085747</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSLGWDYEQY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000229515721827</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0305287331289</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSSDWGSTGQLY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000459031443654</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0403747085747</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASTGRAETLY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000688547165481</TD>
+        	
+        		<TD class="c">0.000447727781509</TD>
+        	
+        		<TD class="c">0.0431089692802</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSQDWGQDTQY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000229515721827</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0305287331289</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSPGTGGAAEQF</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000459031443654</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0403747085747</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSPDWGQDTQY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000328191663932</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000459031443654</TD>
+        	
+        		<TD class="c">0.000447727781509</TD>
+        	
+        		<TD class="c">0.0279430126112</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        <TR>
+        	
+        		<TD class="c">ASSLDSSGNTLY</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0</TD>
+        	
+        		<TD class="c">0.000656383327863</TD>
+        	
+        		<TD class="c">0.000894454382826</TD>
+        	
+        		<TD class="c">0.000229515721827</TD>
+        	
+        		<TD class="c">0.000223863890754</TD>
+        	
+        		<TD class="c">0.0232783232753</TD>
+        	
+        		<TD class="c">0.00550274712043</TD>
+        	
+        </TR>
+    
+        </table>
+        <div id="page_clone"></div>
+    </div>
+<a name="样本间PCA分析"></a><h4>2.7.3 样本间PCA分析</h4>
+<p class="paragraph">
+PCA 分析(Principal Component Analysis)，即主成分分析，是一种对数据进行降维从而简化数据的分析技术，这种方法可以有效的找出数据中最“主要”的元素和结构，去除噪音和冗余，将原有的复杂数据降维，揭示隐藏在复杂数据背后的简单结构。其优势在于简单且无参数限制。
+</p>
+<p class="paragraph">
+通过分析不同样本间的基因及其组合频率和Clonetype频率可以反映样本间的差异和距离。PCA 运用方差分解，将多组数据的差异反映在二维坐标图上，坐标轴取能够最大反映方差值的两个特征值。如样本组成越相似，反映在PCA 图中的距离越近。不同特性的样本可能表现出分散和聚集的分布情况，PCA 结果中对样本差异性解释度最高的两个或三个成分可以用于对假设因素进行验证。
+</p>
+<p class="paragraph">对V基因频率、VJ组合频率、VDJ组合频率和Clonetype频率进行主成分计算，取第一、二位的主成分值进行作图，结果如下图所示：</p>
+<p class="center">
+    <img src="src/pictures/PCA.png" width="40%" height="40%"/>
+</p>
+<p class="name">图 2-14 样本间PCA分析(<a href="src/pictures/PCA.png">点击大图</a>)</p>
+
+
+<!-------------------------------------------- 参考文献 -------------------------------------------->
+<div id="page">
+<p class="head"><a href="#home" title = "返回首页"><img class="logo" align="left" src="src/images/logo.png" /></a>
+<a name="参考文献">广州华银医学检验中心</a>
+<hr />
+</p><br />
+<a name="参考文献"></a><h2>三、参考文献</h2>
+<p class="ref">
+[1] Bolotin, Dmitriy A., et al. "MiXCR: software for comprehensive adaptive immunity profiling." Nature methods 12.5 (2015): 380-381. </Br>
+[2] Gupta, Namita T., et al. "Change-O: a toolkit for analyzing large-scale B cell immunoglobulin repertoire sequencing data." Bioinformatics 31.20 (2015): 3356-3358.</Br>
+[3] Vander Heiden, Jason A., et al. "pRESTO: a toolkit for processing high-throughput sequencing raw reads of lymphocyte receptor repertoires." Bioinformatics 30.13 (2014): 1930-1932.</Br>
+[4] Lefranc, Marie-Paule, et al. "IMGT®, the international ImMunoGeneTics information system®." Nucleic acids research 37.suppl_1 (2008): D1006-D1012.</Br>
+[5] Ye, Jian, et al. "IgBLAST: an immunoglobulin variable domain sequence analysis tool." Nucleic acids research 41.W1 (2013): W34-W40.</Br>
+[6] Chunlin Wanga, Catherine M. Sandersb, Qunying Yang et al. High throughput sequencing reveals a complex pattern of dynamic interrelationships among human T cell subsets. PANS, 2010, vol. 107:1518–1523.</Br>
+[7] Jennifer Benichou, Rotem Ben-Hamo, Yoram Louzoun et al. 2Rep-Seq uncovering the immunological repertoire through next-generation sequencing. Immunology, 2011, 135: 183–191.</Br>
+[8] Jeroen W J van Heijst, Izaskun Ceberio, Lauren B Lipuma et al. Quantitative assessment of T cell repertoire recovery after hematopoietic stem cell transplantation. Nature Medicine, 2013,VOL.19: 372-379.</Br>
+[9] Miran Jang, Poh-Yin Yew, Kosei Hasegawa et al. Characterization of T cell repertoire of blood,tumor, and ascites in ovarian cancer patients using next generation sequencing. OncoImmunology, 2015, Vol.4:e1030561-1-10.</Br>
+[10] Evaggelia Liaskou, Eva Kristine Klemsdal Henriksen, Kristian Holm et al. High-throughput T-cell receptor sequencing across chronic liver diseases reveals distinct disease-associated repertoires. Hepatology, 2015,1-10.</Br>
+[11] X-L Hou, LWang, Y-L Ding, et al. Current status and recent advances of next generation sequencing techniques in immunological repertoire. Genes and Immunity, 2016, 1–12.
+[12] Bates S T, Clemente J C, Flores G E, et al. Global biogeography of highly diverse protistan communities in soil[J]. The ISME journal, 2013, 7(3): 652-659.
+</p>
+</div>
+<!-------------------------------------------- 附录 -------------------------------------------->
+<p class="head"><a href="#home" title = "返回首页"><img class="logo" align="left" src="src/images/logo.png" /></a>
+<a name="附录">广州华银医学检验中心</a>
+<hr />
+</p><br />
+<a name="备注"><h2>四、备注</h2></a>
+<a name="结果文件说明"></a><h3>4.1 结果文件说明</h3>
+<p class="paragraph">1、Summary.txt：项目样本的分析概况。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、*.CloneFilter.txt：样本的clone序列以及比对VDJ的详细信息。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、*_VDJUsage.xls：样本的V、D、J基因的使用频率统计信息。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、*_VDJCombination.xls：样本的VJ Combination和VDJ Combination频率统计信息。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、VFraction.txt：样本间V基因的频率比较。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6、VJFraction.txt：样本间VJ基因组合的频率比较。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7、VDJFraction.txt：样本间VDJ基因组合的频率比较。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8、ClonetypeFraction.txt：样本间clonetype的频率比较。<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9、MixDiffAnalysis.xls：样本间假设检验结果文件。<br>
+
+</p>
+<p class="paragraph">结果文件建议使用Excel或者EditPlus等专业文本编辑器打开。</p>
+<a name="分析软件说明"></a><h3>4.2 分析软件说明</h3>
+ <div style="text-align:center;">
+        <table id="software">
+        	
+        	<TR>
+        		<TD class="c1">Software</TD>
+        		<TD class="c2">Version</TD>
+        	</TR>
+        	<TR>
+        		<TD class="c1">Igblast</TD>
+        		<TD class="c2">2.6.1</TD>
+        	</TR>
+        	<TR>
+        		<TD class="c1">Mixcr</TD>
+        		<TD class="c2">2.1.5</TD>
+        	</TR>
+        	<TR>
+        		<TD class="c1">pRESTO</TD>
+        		<TD class="c2">0.5.3</TD>
+        	</TR>
+        	<TR>
+        		<TD class="c1">Alakazam</TD>
+        		<TD class="c2">0.2.8</TD>
+        	</TR>
+        	<TR>
+        		<TD class="c1">SHazaM</TD>
+        		<TD class="c2">0.1.8</TD>
+        	</TR>
+        </table>
+</div>
+<p class="paragraph">推荐使用火狐浏览器进行网页版结题报告浏览，下载地址：<a href="http://www.firefox.com.cn/download/">http://www.firefox.com.cn/download/</a></p>
+<!----------------------------------------------- End -------------------------------------------->
+</div>
+</body>
+</html>
